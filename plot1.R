@@ -13,7 +13,7 @@ plot1 = function(df) {
   dev.off()
 }
 
-# Get the needed data
+# Get the needed data from the 'data_prep.R' file
 df = data_prep()
 
 # run plot1
