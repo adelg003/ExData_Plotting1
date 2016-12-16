@@ -1,3 +1,5 @@
+source('data_prep.R')
+
 # Create histgram for plot 1
 plot1 = function(df) {
 
@@ -10,3 +12,9 @@ plot1 = function(df) {
   dev.copy(png, file = 'plot1.png')
   dev.off()
 }
+
+# Get the needed data
+df = data_prep()
+
+# run plot1
+plot1(df)

@@ -1,3 +1,5 @@
+source('data_prep.R')
+
 # Create line graph for plot 2
 plot2 = function(df) {
   
@@ -11,3 +13,9 @@ plot2 = function(df) {
   dev.copy(png, file = 'plot2.png')
   dev.off()
 }
+
+# Get the needed data
+df = data_prep()
+
+# run plot1
+plot2(df)
